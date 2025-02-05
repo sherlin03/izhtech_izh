@@ -1,0 +1,52 @@
+export default function PlatformInsights() {
+  return (
+    <section className="h-full">
+      <div className="relative flex-col h-full gap-8 mx-auto my-auto lg:flex lg:flex-row">
+        <div className="flex flex-col self-center justify-center w-1/2 h-full pb-5 mx-auto">
+          <img
+            className="justify-center w-full h-auto "
+            src="/images/platforminsights/img.png"
+            alt="pic"
+          />
+        </div>
+        <div className="flex flex-col justify-center w-1/2 h-full pb-1">
+          <p className="pt-10 text-xs">THE NUMBER ONE #DATATRACKING APP</p>
+          <h1 className="pt-4 font-bold text-md lg:w-3/4 lg:text-3xl md:text-3xl sm:text-3xl">
+            Keep pushing <br />
+            forward. We've got <br />
+            your back.
+          </h1>
+          <p className="pt-4 text-xs pb-">
+            So how does it work? Let’s check our <b>Getting Started</b> <br />
+            tutorial or contact us for a demo.
+          </p>
+          <div className="flex flex-col w-full gap-6 py-8 md:flex-row lg:flex-row lg:flex-wrap lg:justify-center">
+            <div className="flex flex-col py-2 border-t border-slate-600 md:flex-1 lg:w-1/4">
+              <h2 className="pt-2 text-3xl font-bold">
+                36{" "}
+                <span className="text-transparent bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text">
+                  +
+                </span>
+              </h2>
+              <p className="pt-2 pb-3 text-xs">
+                designers <br /> and developers
+              </p>
+            </div>
+            <div className="flex flex-col py-2 border-t md:flex-1 lg:w-1/4 border-slate-600">
+              <h2 className="pt-2 text-3xl font-bold">
+                345{" "}
+                <span className="text-transparent bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text">
+                  +
+                </span>
+              </h2>
+              <p className="pt-2 pb-3 text-xs">
+                live promo <br /> campaigns
+              </p>
+            </div>
+          </div>
+        </div>
+       
+      </div>
+    </section>
+  );
+}

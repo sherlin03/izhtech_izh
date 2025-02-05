@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*:focus {
+  --tw-ring-opacity: 0 !important;
+}
+
+@keyframes pathAnimation {
+  0% {
+    opacity: 0.05;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 0.05;
+  }
+}
+
+.animated-path {
+  animation: pathAnimation 2s ease-in-out infinite;
+}
+
+
+.progress {
+  position: sticky;
+  top: 0;
+  width: 80px;
+  height: 80px;
+  margin: 0;
+  padding: 0;
+}
+
+.progress svg {
+  transform: translateX(-100px) rotate(-90deg);
+}
+
+circle {
+  stroke-dashoffset: 0;
+  stroke-width: 5%;
+  fill: none;
+}
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background: var(--red);
+  transform-origin: 0%;
+}
+
+.progress-wrapper {
+  width: 100%;
+}
+
+.progress-bar-container {
+  width: 100%;
+  height: 10px;
+  /* Adjust height as needed */
+  background-color: #ccc;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: blue;
+}
+
+
+.services-description *{
+  color: white !important;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: auto; /* Ensure vertical scrolling */
+}
+
+.pos{
+  position: sticky !important;
+  top: 0 !important;
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideFromBottom {
+  0% {
+    transform: translateY(100%); /* Start from the bottom */
+  }
+  100% {
+    transform: translateY(0); /* End at the original position */
+  }
+}
+
